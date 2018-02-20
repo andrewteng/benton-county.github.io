@@ -1,7 +1,8 @@
-# Benton-Franklin Health District Dashboard Proposal
+## Benton-Franklin Health District Dashboard Proposal
 
-# Objective
+### Objective
+After identifying the top health risk factors in the community, we propose to create a dashboard that would help the health officer in identifying, prioritizing, addressing, and monitoring the key public health issues in the county. The proposed dashboard would help the health officer montitor the health problems and assess the success of proposed interventions. 
 
-# Preview
-
-### Screenshot
+### Screenshots
+![Alt text](/images/screenshot1.jpg?raw=true)
+![Alt text](/images/screenshot2.jpg?raw=true)
