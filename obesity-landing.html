@@ -54,9 +54,9 @@
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="obesity.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cutlery"></i>Obesity</a>
+                        <a href="obesity-landing.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cutlery"></i>Obesity</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-bar-chart"></i><a href="obesity.html">Charts</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart"></i><a href="obesity-landing.html">Charts</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="#">Data Table</a></li>
                         </ul>
                     </li>
@@ -118,7 +118,7 @@
 
                                 <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                                <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                                <a class="nav-link" href="page-login.html"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
                 </div>
@@ -130,94 +130,78 @@
             <div class="col-sm-12">
                 <div class="page-header">
                     <div class="page-title">
-                        <h1>Obesity</h1>
+                        <h1>Benton-Franklin Health District Dashboard</h1>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content">
-            <div class="col-xl-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4 class="card-title mb-0">Increase access to exercise opportunities by 5% by December 31, 2020</h4>
-                            </div>
-                        </div><br>
-                        <div class="alert alert-warning" role="alert">
-                            Target is in progress.
-                        </div>
-                        <div class="chart-wrapper mt-4" />
-                            <canvas id="obesity1Chart" style="height:200px;" height="200"></canvas>
-                        
-                    </div>
+        <div class="content mt-3">
+
+            <div class="col-sm-12">
+                <div class="alert  alert-secondary alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Explore Obesity Goals</h4>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="content">
-            <div class="col-xl-6">
-                <div class="card">
+
+
+           <a href="obesity1.html">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card text-white bg-flat-color-1">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4 class="card-title mb-0">Decrease the percent of middle school students who do not meet the physical activity recommendations from an average of 45% to 43% or better by December 2017</h4>
-                            </div>
-                        </div><br>
-                        <div class="alert alert-success" role="alert">
-                            Target was achieved.
+                        <h4 class="mb-0">Goal 1</h4>                        
+                        <p class="text-light">Increase physically active among community members</p>
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70"/>
+                            <canvas id="widgetChart1"></canvas>
                         </div>
-                        <div class="chart-wrapper mt-4" />
-                            <canvas id="obesity4Chart" style="height:200px;" height="200"></canvas>
-                        
+                    <br>Overall Status: (30%)<br>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br>
                     </div>
-                </div>
+                </div></a>
             </div>
-        </div>
-    </div>
         
-         <div class="content">
-            <div class="col-xl-6">
-                <div class="card">
+            <a href="obesity2.html">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card text-white bg-flat-color-1">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4 class="card-title mb-0">Increase the percentage of people who eat five or more servings per day of fruits and vegetables to 40% by December 2017</h4>
-                            </div>
-                        </div><br>
-                        <div class="alert alert-danger" role="alert">
-                            Target was not met.
-                        </div>
-                        <div class="chart-wrapper mt-4" />
-                            <canvas id="obesity2Chart" height="150"></canvas>
+                        <h4 class="mb-0">Goal 2</h4>
+                        <p class="text-light">Increase nutritional food choices for adults</p>
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70"/>
+                            <canvas id="widgetChart2"></canvas>
+                        </div> 
+                    <br>Overall Status: (0%)<br>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br>
                     </div>
-                </div>
+                </div></a>
             </div>
-        </div>
-    </div> 
-
-    <div class="content mt-3">
-            <div class="col-xl-6">
-                <div class="card">
+    
+            <a href="#">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card text-white bg-flat-color-1">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4 class="card-title mb-0">Increase access to healthy foods by 2% by December 2017</h4>
-                            </div>
-                        </div><br>
-                        <div class="alert alert-danger" role="alert">
-                            Target was not met.
+                        <h4 class="mb-0">Goal 3</h4>
+                        <p class="text-light">Promote breastfeeding and improve child nutrition</p>
+                    
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70"/>
+                            <canvas id="widgetChart3"></canvas>
                         </div>
-                        <div class="chart-wrapper mt-4" />
-                            <canvas id="obesity3Chart" style="height:200px;" height="200"></canvas>
-                    </div>
-                </div>
+                    <br>Overall Status: (20%)<br>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br>
+                        </div>
+                </div></a>
             </div>
-        </div>
+    
+    </div>
     </div> 
-
+                
+    </div> 
+    
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="assets/js/plugins.js"></script>
