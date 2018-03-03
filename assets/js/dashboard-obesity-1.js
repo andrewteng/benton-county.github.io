@@ -28,7 +28,7 @@ function convertHex (hex, opacity) {
             datasets: [
             {
               label: 'Benton County',
-              backgroundColor: convertHex(brandInfo, 10),
+              backgroundColor: 'transparent',
               borderColor: brandInfo,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
@@ -40,6 +40,7 @@ function convertHex (hex, opacity) {
               borderColor: brandSuccess,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
+              borderDash: [8, 5],
               data: [60,58,65,68,72,78]
           },
           {
@@ -48,7 +49,7 @@ function convertHex (hex, opacity) {
               borderColor: brandDanger,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 1,
-              borderDash: [8, 5],
+              borderDash: [3,3],
               data: [87,87,87,87,87,87,87,87,87,87]
           }
           ]
@@ -56,16 +57,24 @@ function convertHex (hex, opacity) {
         options: {
             maintainAspectRatio: true,
             legend: {
-                display: false
+                display: true
             },
             responsive: true,
             scales: {
                 xAxes: [{
+                  scaleLabel: {
+                      display: true,
+                      labelString: 'Year'
+                  },
                   gridLines: {
                     drawOnChartArea: false
                   }
                 }],
                 yAxes: [ {
+                      scaleLabel: {
+                      display: true,
+                      labelString: 'Percent'
+                  },
                       ticks: {
                         beginAtZero: true,
                         maxTicksLimit: 5,
@@ -100,7 +109,7 @@ function convertHex (hex, opacity) {
             datasets: [
             {
               label: '6th Graders',
-              backgroundColor: convertHex(brandInfo, 10),
+              backgroundColor: 'transparent',
               borderColor: brandInfo,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
@@ -112,6 +121,7 @@ function convertHex (hex, opacity) {
               borderColor: brandSuccess,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
+              borderDash: [8, 5],
               data: [45.5,44.7,42.6,39.8,38.5,37.8]
           },
           {
@@ -120,7 +130,7 @@ function convertHex (hex, opacity) {
               borderColor: brandDanger,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 1,
-              borderDash: [8, 5],
+              borderDash: [3, 3],
               data: [43,43,43,43,43,43,43,43,43,43]
           }
           ]
@@ -128,16 +138,24 @@ function convertHex (hex, opacity) {
         options: {
             maintainAspectRatio: true,
             legend: {
-                display: false
+                display: true
             },
             responsive: true,
             scales: {
                 xAxes: [{
+                  scaleLabel: {
+                      display: true,
+                      labelString: 'Year'
+                  },
                   gridLines: {
                     drawOnChartArea: false
                   }
                 }],
-                yAxes: [ {
+                yAxes: [{
+                    scaleLabel: {
+                      display: true,
+                      labelString: 'Percent'
+                  },
                       ticks: {
                         beginAtZero: true,
                         maxTicksLimit: 5,
@@ -201,7 +219,7 @@ function convertHex (hex, opacity) {
         options: {
             maintainAspectRatio: true,
             legend: {
-                display: false
+                display: true
             },
             responsive: true,
             scales: {
@@ -272,7 +290,7 @@ function convertHex (hex, opacity) {
         options: {
             maintainAspectRatio: true,
             legend: {
-                display: false
+                display: true
             },
             responsive: true,
             scales: {

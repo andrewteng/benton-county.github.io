@@ -29,7 +29,7 @@ function convertHex (hex, opacity) {
             datasets: [
             {
               label: 'Benton County',
-              backgroundColor: convertHex(brandInfo, 10),
+              backgroundColor: 'transparent',
               borderColor: brandInfo,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
@@ -41,6 +41,7 @@ function convertHex (hex, opacity) {
               borderColor: brandSuccess,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
+              borderDash: [8, 5],
               data: [15,18,20,18,22,28]
           },
           {
@@ -49,7 +50,7 @@ function convertHex (hex, opacity) {
               borderColor: brandDanger,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 1,
-              borderDash: [8, 5],
+              borderDash: [3, 3],
               data: [40,40,40,40,40,40,40,40,40,40]
           }
           ]
@@ -57,16 +58,24 @@ function convertHex (hex, opacity) {
         options: {
             maintainAspectRatio: true,
             legend: {
-                display: false
+                display: true
             },
             responsive: true,
             scales: {
                 xAxes: [{
+                    scaleLabel: {
+                      display: true,
+                      labelString: 'Year'
+                  },
                   gridLines: {
                     drawOnChartArea: false
                   }
                 }],
                 yAxes: [ {
+                    scaleLabel: {
+                      display: true,
+                      labelString: 'Percent'
+                  },
                       ticks: {
                         beginAtZero: true,
                         maxTicksLimit: 5,
@@ -100,7 +109,7 @@ function convertHex (hex, opacity) {
             datasets: [
             {
               label: 'Benton County',
-              backgroundColor: convertHex(brandInfo, 10),
+              backgroundColor: 'transparent',
               borderColor: brandInfo,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
@@ -112,6 +121,7 @@ function convertHex (hex, opacity) {
               borderColor: brandSuccess,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 2,
+              borderDash: [8, 5],
               data: [8,7,7.6,7.8,7.2,7.8]
           },
           {
@@ -120,7 +130,7 @@ function convertHex (hex, opacity) {
               borderColor: brandDanger,
               pointHoverBackgroundColor: '#fff',
               borderWidth: 1,
-              borderDash: [8, 5],
+              borderDash: [3, 3],
               data: [6,6,6,6,6,6,6,6,6,6]
           }
           ]
@@ -128,16 +138,24 @@ function convertHex (hex, opacity) {
         options: {
             maintainAspectRatio: true,
             legend: {
-                display: false
+                display: true
             },
             responsive: true,
             scales: {
                 xAxes: [{
+                    scaleLabel: {
+                      display: true,
+                      labelString: 'Year'
+                  },
                   gridLines: {
                     drawOnChartArea: false
                   }
                 }],
                 yAxes: [ {
+                    scaleLabel: {
+                      display: true,
+                      labelString: 'Percent'
+                  },
                       ticks: {
                         beginAtZero: true,
                         maxTicksLimit: 5,
